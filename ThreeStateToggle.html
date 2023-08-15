@@ -8,32 +8,49 @@
     <title>tri-state toggle</title>
   </head>
   <body>
-    <div class="tri-state-toggle">
+    <div class="three-state-toggle">
       <div class="button" type="radio" name="toggle" id="one">
-        <h2 class="toggle-heading">Cafés</h2>
+        <h2 class="button-heading">Cafés</h2>
       </div>
       <div class="button" type="radio" name="toggle" id="two">
-        <h2 class="toggle-heading">Offices</h2>
+        <h2 class="button-heading">Offices</h2>
       </div>
       <div class="button" type="radio" name="toggle" id="three">
-        <h2 class="toggle-heading">Venues</h2>
+        <h2 class="button-heading">Venues</h2>
       </div>
     </div>
   </body>
+
   <script>
     var buttons = document.getElementsByClassName("button");
-    var arr = [...buttons];
+    var buttonArray = [...buttons];
+    var buttonHeadings = document.getElementsByClassName("button-heading");
+    var buttonHeadingArray = [...buttonHeadings];
 
-    arr.forEach((element, index) => {
-      element.addEventListener("click", () => {
-        element.style.background = "#F6F6F6";
+    buttonArray.forEach((button, index) => {
+      button.addEventListener("click", () => {
+        button.style.background = "#F6F6F6";
 
-        arr
+        buttonArray
           .filter(function (item) {
-            return item != element;
+            return item != button;
           })
           .forEach((item) => {
             item.style.background = "#FFFFFF";
+          });
+      });
+    });
+
+    buttonHeadingArray.forEach((buttonHeading, index) => {
+      buttonHeading.addEventListener("click", () => {
+        buttonHeading.style.color = "#434343";
+
+        buttonHeadingArray
+          .filter(function (item) {
+            return item != buttonHeading;
+          })
+          .forEach((item) => {
+            item.style.color = "#AFAFAF";
           });
       });
     });

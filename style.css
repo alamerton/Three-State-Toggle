@@ -18,11 +18,14 @@
 #one {
     background: #F6F6F6;
 }
-.toggle-heading {
+#one .button-heading {
     color: #434343;
+}
+.button-heading {
+    color: #AFAFAF;
     text-align: center;
     font-size: 35px;
     font-style: normal;
     font-weight: 500;
-    line-height: normal;
+    line-height: 22px;
 }
