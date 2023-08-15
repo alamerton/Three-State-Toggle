@@ -1,0 +1,29 @@
+.button {
+    width: 350px;
+    height: 75px;
+    flex-shrink: 0;
+    appearance: none;
+    border-radius: 50px;
+}
+.button:hover {
+    cursor: pointer;
+}
+.tri-state-toggle {
+    display: flex;
+    justify-content: center;
+    border: 3px solid black;
+    border-radius: 50px;
+}
+#one {
+    background: #F6F6F6;
+}
+.toggle-heading {
+    color: #434343;
+    text-align: center;
+    font-family: Inter;
+    font-size: 35px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    opacity: 1;
+}
