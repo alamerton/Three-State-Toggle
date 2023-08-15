@@ -9,7 +9,7 @@
 .button:hover {
     cursor: pointer;
 }
-.tri-state-toggle {
+.three-state-toggle {
   	width: 100%;
     display: flex;
     justify-content: center;
