@@ -22,12 +22,12 @@ p {
   font-family: "Apex New Book";
 }
 
+/* keep everything below here */
+
 #dynamic-heading {
   text-shadow: 2px 2px #434343;
   color: #ffffff;
 }
-/* keep everything below here */
-
 .three-state-toggle {
   width: 80%;
   display: flex;
@@ -60,6 +60,13 @@ p {
 }
 #cafe-button .button-heading {
   color: #434343;
+  margin-top: 25px;
+}
+#office-button .button-heading {
+  margin-top: 25px;
+}
+#venue-button .button-heading {
+  margin-top: 25px;
 }
 .banner-image {
   height: 50%;
