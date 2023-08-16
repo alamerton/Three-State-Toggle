@@ -1,4 +1,8 @@
-/* Remove this part when adding CSS */
+/* 
+Remove the code below here when adding custom css to the squarespace site
+These are styles that squarespace already applies to the HTML. They're
+used here to give this code the same appearance.
+*/
 body,
 html {
   height: 100%;
@@ -11,20 +15,19 @@ html {
   src: url("https://static1.squarespace.com/static/61a9ff8f8fb5cc04d2bddf56/t/61c5a502c1b82238bd9d1e34/1640342786993/ApexNew-Book.otf");
 }
 
-h1 {
-  font-family: "Apex New Book";
-}
-h2 {
-  font-family: "Apex New Book";
-}
-h3 {
-  font-family: "Apex New Book";
-}
+h1,
+h2,
+h3,
 p {
   font-family: "Apex New Book";
+  color: #ffffff;
 }
 
-/* ... */
+#dynamic-heading {
+  text-shadow: 2px 2px #434343;
+}
+/* keep everything below here */
+
 .three-state-toggle {
   width: 80%;
   display: flex;
@@ -65,9 +68,16 @@ p {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-}
-#dynamic-heading {
   text-align: center;
-  color: #ffffff;
-  vertical-align: center;
+}
+#cta-button {
+  width: 287.499px;
+  height: 67.76px;
+  border-radius: 50px;
+  background: #7bd3f7;
+  color: #fff;
+  font-family: "Apex New";
+  font-weight: 550;
+  font-size: 32px;
+  margin-top: 33%;
 }
