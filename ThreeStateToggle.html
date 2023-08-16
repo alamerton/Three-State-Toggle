@@ -8,15 +8,17 @@
     <title>tri-state toggle</title>
   </head>
   <body>
-    <div class="three-state-toggle">
-      <div class="button" type="radio" name="toggle" id="one">
-        <h2 class="button-heading">Cafés</h2>
-      </div>
-      <div class="button" type="radio" name="toggle" id="two">
-        <h2 class="button-heading">Offices</h2>
-      </div>
-      <div class="button" type="radio" name="toggle" id="three">
-        <h2 class="button-heading">Venues</h2>
+    <div class="banner">
+      <div class="three-state-toggle">
+        <div class="button" type="radio" name="toggle" id="one">
+          <h2 class="button-heading">Cafés</h2>
+        </div>
+        <div class="button" type="radio" name="toggle" id="two">
+          <h2 class="button-heading">Offices</h2>
+        </div>
+        <div class="button" type="radio" name="toggle" id="three">
+          <h2 class="button-heading">Venues</h2>
+        </div>
       </div>
     </div>
   </body>
@@ -32,14 +34,17 @@
         button.style.background = "#F6F6F6";
 
         if (index == 0) {
-          document.getElementsByTagName("body")[0].style.backgroundColor =
-            "white";
+          // Display cafe page
+          document.getElementsByClassName("banner")[0].style.backgroundImage =
+            "url('src/cafe-banner.png')";
         } else if (index == 1) {
-          document.getElementsByTagName("body")[0].style.backgroundColor =
-            "teal";
+          // display office page
+          document.getElementsByClassName("banner")[0].style.backgroundImage =
+            "url('src/office-banner.png')";
         } else {
-          document.getElementsByTagName("body")[0].style.backgroundColor =
-            "rgb(92, 204, 125)";
+          // display venue page
+          document.getElementsByClassName("banner")[0].style.background =
+            "url('src/venue-banner.png')";
         }
 
         buttonArray
@@ -52,6 +57,7 @@
       });
     });
 
+    // Can probably refactor this into the first loop by targeting the classname separately
     buttonHeadingArray.forEach((buttonHeading, index) => {
       buttonHeading.addEventListener("click", () => {
         buttonHeading.style.color = "#434343";
