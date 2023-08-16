@@ -43,6 +43,8 @@
     const dynamicHeading = document.getElementById("dynamic-heading");
     const dynamicSubheading = document.getElementById("dynamic-subheading");
     const dynamicDescription = document.getElementById("dynamic-description");
+    document.getElementsByClassName("banner-image")[0].style.backgroundImage =
+      "url('https://images.squarespace-cdn.com/content/64db45b2c5e5061aaa7b478e/7157cfd6-d49e-428f-b5ed-d660931be20c/cafe-banner.png?content-type=image%2Fpng')";
 
     buttonArray.forEach((button, index) => {
       button.addEventListener("click", () => {
