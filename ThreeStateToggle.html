@@ -1,3 +1,4 @@
+<!-- GitHub Repo: https://github.com/alamerton/Three-State-Toggle -->
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -37,25 +38,19 @@
         button.style.background = "#F6F6F6";
 
         if (index == 0) {
-          // Display cafe page
           document.getElementsByClassName(
             "banner-image"
           )[0].style.backgroundImage = "url('src/cafe-banner.png')";
-          // ...
           dynamicHeading.textContent = "For Your Café";
         } else if (index == 1) {
-          // display office page
           document.getElementsByClassName(
             "banner-image"
           )[0].style.backgroundImage = "url('src/office-banner.png')";
-          // ...
           dynamicHeading.textContent = "For Your Office";
         } else {
-          // display venue page
           document.getElementsByClassName(
             "banner-image"
           )[0].style.backgroundImage = "url('src/venue-banner.png')";
-          // ...
           dynamicHeading.textContent = "For Your Venue";
         }
 
