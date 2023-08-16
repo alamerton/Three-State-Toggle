@@ -1,45 +1,73 @@
 /* Remove this part when adding CSS */
-body, html {
-    height: 100%;
-    margin: 0;
+body,
+html {
+  height: 100%;
+  margin: 0;
+  font-family: Apex;
 }
-/*  */
+
+@font-face {
+  font-family: "Apex New Book";
+  src: url("https://static1.squarespace.com/static/61a9ff8f8fb5cc04d2bddf56/t/61c5a502c1b82238bd9d1e34/1640342786993/ApexNew-Book.otf");
+}
+
+h1 {
+  font-family: "Apex New Book";
+}
+h2 {
+  font-family: "Apex New Book";
+}
+h3 {
+  font-family: "Apex New Book";
+}
+p {
+  font-family: "Apex New Book";
+}
+
+/* ... */
 .three-state-toggle {
-  	width: 100%;
-    display: flex;
-    justify-content: center;
-    border-radius: 50px;
-    background: #FFFFFF;
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  border-radius: 50px;
+  background: #ffffff;
+  padding: 5px;
+  margin: auto;
 }
 .button {
-    width: 350px;
-    height: 75px;
-    flex-shrink: 0;
-    appearance: none;
-    border-radius: 50px;
+  width: 33%;
+  height: 75px;
+  flex-shrink: 0;
+  appearance: none;
+  border-radius: 50px;
 }
 .button:hover {
-    cursor: pointer;
+  cursor: pointer;
 }
 #cafe-button {
-    background: #F6F6F6;
+  background: #f6f6f6;
 }
 .button-heading {
-    color: #AFAFAF;
-    text-align: center;
-    font-size: 35px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 22px;
+  color: #afafaf;
+  text-align: center;
+  font-size: 35px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 22px;
 }
 #cafe-button .button-heading {
-    color: #434343;
+  color: #434343;
 }
 .banner-image {
-    height: 50%;
-    position: relative;
-    background-image: url('src/cafe-banner.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+  height: 50%;
+  padding-top: 25px;
+  background-image: url("src/cafe-banner.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+#dynamic-heading {
+  text-align: center;
+  color: #ffffff;
+  vertical-align: center;
 }
