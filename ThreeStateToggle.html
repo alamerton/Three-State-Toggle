@@ -8,15 +8,15 @@
     <title>tri-state toggle</title>
   </head>
   <body>
-    <div class="banner">
+    <div class="banner-image">
       <div class="three-state-toggle">
-        <div class="button" type="radio" name="toggle" id="one">
+        <div class="button" type="radio" name="toggle" id="cafe-button">
           <h2 class="button-heading">Cafés</h2>
         </div>
-        <div class="button" type="radio" name="toggle" id="two">
+        <div class="button" type="radio" name="toggle" id="office-button">
           <h2 class="button-heading">Offices</h2>
         </div>
-        <div class="button" type="radio" name="toggle" id="three">
+        <div class="button" type="radio" name="toggle" id="venue-button">
           <h2 class="button-heading">Venues</h2>
         </div>
       </div>
@@ -35,16 +35,22 @@
 
         if (index == 0) {
           // Display cafe page
-          document.getElementsByClassName("banner")[0].style.backgroundImage =
-            "url('src/cafe-banner.png')";
+          document.getElementsByClassName(
+            "banner-image"
+          )[0].style.backgroundImage = "url('src/cafe-banner.png')";
+          // ...
         } else if (index == 1) {
           // display office page
-          document.getElementsByClassName("banner")[0].style.backgroundImage =
-            "url('src/office-banner.png')";
+          document.getElementsByClassName(
+            "banner-image"
+          )[0].style.backgroundImage = "url('src/office-banner.png')";
+          // ...
         } else {
           // display venue page
-          document.getElementsByClassName("banner")[0].style.background =
-            "url('src/venue-banner.png')";
+          document.getElementsByClassName(
+            "banner-image"
+          )[0].style.backgroundImage = "url('src/venue-banner.png')";
+          // ...
         }
 
         buttonArray
@@ -57,7 +63,7 @@
       });
     });
 
-    // Can probably refactor this into the first loop by targeting the classname separately
+    // TODO refactor this into the first loop by targeting the classname separately
     buttonHeadingArray.forEach((buttonHeading, index) => {
       buttonHeading.addEventListener("click", () => {
         buttonHeading.style.color = "#434343";

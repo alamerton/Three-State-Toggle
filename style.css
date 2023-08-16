@@ -1,4 +1,15 @@
-
+/* Remove this part when adding CSS */
+body, html {
+    height: 100%;
+}
+/*  */
+.three-state-toggle {
+  	width: 100%;
+    display: flex;
+    justify-content: center;
+    border-radius: 50px;
+    background: #FFFFFF;
+}
 .button {
     width: 350px;
     height: 75px;
@@ -9,18 +20,8 @@
 .button:hover {
     cursor: pointer;
 }
-.three-state-toggle {
-  	width: 100%;
-    display: flex;
-    justify-content: center;
-    border-radius: 50px;
-    background: #FFFFFF;
-}
-#one {
+#cafe-button {
     background: #F6F6F6;
-}
-#one .button-heading {
-    color: #434343;
 }
 .button-heading {
     color: #AFAFAF;
@@ -30,8 +31,14 @@
     font-weight: 500;
     line-height: 22px;
 }
-
-.banner {
+#cafe-button .button-heading {
+    color: #434343;
+}
+.banner-image {
+    height: 50%;
+    position: relative;
     background-image: url('src/cafe-banner.png');
-    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
