@@ -1,6 +1,7 @@
 /* Remove this part when adding CSS */
 body, html {
     height: 100%;
+    margin: 0;
 }
 /*  */
 .three-state-toggle {

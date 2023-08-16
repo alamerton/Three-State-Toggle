@@ -10,16 +10,35 @@
   <body>
     <div class="banner-image">
       <div class="three-state-toggle">
-        <div class="button" type="radio" name="toggle" id="cafe-button">
+        <div
+          class="button"
+          type="radio"
+          name="toggle"
+          id="cafe-button"
+          value="cafes"
+        >
           <h2 class="button-heading">Cafés</h2>
         </div>
-        <div class="button" type="radio" name="toggle" id="office-button">
+        <div
+          class="button"
+          type="radio"
+          name="toggle"
+          id="office-button"
+          value="offices"
+        >
           <h2 class="button-heading">Offices</h2>
         </div>
-        <div class="button" type="radio" name="toggle" id="venue-button">
+        <div
+          class="button"
+          type="radio"
+          name="toggle"
+          id="venue-button"
+          value="venues"
+        >
           <h2 class="button-heading">Venues</h2>
         </div>
       </div>
+      <h2 id="dynamic-heading"></h2>
     </div>
   </body>
 
@@ -28,6 +47,7 @@
     var buttonArray = [...buttons];
     var buttonHeadings = document.getElementsByClassName("button-heading");
     var buttonHeadingArray = [...buttonHeadings];
+    const dynamicHeading = document.getElementById("dynamic-heading");
 
     buttonArray.forEach((button, index) => {
       button.addEventListener("click", () => {
@@ -39,18 +59,21 @@
             "banner-image"
           )[0].style.backgroundImage = "url('src/cafe-banner.png')";
           // ...
+          dynamicHeading.textContent = "For Your Café";
         } else if (index == 1) {
           // display office page
           document.getElementsByClassName(
             "banner-image"
           )[0].style.backgroundImage = "url('src/office-banner.png')";
           // ...
+          dynamicHeading.textContent = "For Your Office";
         } else {
           // display venue page
           document.getElementsByClassName(
             "banner-image"
           )[0].style.backgroundImage = "url('src/venue-banner.png')";
           // ...
+          dynamicHeading.textContent = "For Your Venue";
         }
 
         buttonArray
