@@ -20,11 +20,11 @@ h2,
 h3,
 p {
   font-family: "Apex New Book";
-  color: #ffffff;
 }
 
 #dynamic-heading {
   text-shadow: 2px 2px #434343;
+  color: #ffffff;
 }
 /* keep everything below here */
 
@@ -80,4 +80,7 @@ p {
   font-weight: 550;
   font-size: 32px;
   margin-top: 33%;
+}
+.page-header {
+  text-align: center;
 }

@@ -24,14 +24,25 @@
       <h1 id="dynamic-heading">For Your Café</h1>
       <button type="button" id="cta-button">Get Updates</button>
     </div>
+    <div class="page-header">
+      <h1 id="dynamic-subheading">Queues Building Up?</h1>
+      <h3 id="dynamic-description">
+        Hand-washing customers’ reusable cups is now a thing of the past. Place
+        instarinse where it suits your store best. Whether it’s staff operated
+        or customer operated, save you and your customers those precious rush
+        hour seconds.
+      </h3>
+    </div>
   </body>
 
   <script>
-    var buttons = document.getElementsByClassName("button");
-    var buttonArray = [...buttons];
-    var buttonHeadings = document.getElementsByClassName("button-heading");
-    var buttonHeadingArray = [...buttonHeadings];
+    const buttons = document.getElementsByClassName("button");
+    const buttonArray = [...buttons];
+    const buttonHeadings = document.getElementsByClassName("button-heading");
+    const buttonHeadingArray = [...buttonHeadings];
     const dynamicHeading = document.getElementById("dynamic-heading");
+    const dynamicSubheading = document.getElementById("dynamic-subheading");
+    const dynamicDescription = document.getElementById("dynamic-description");
 
     buttonArray.forEach((button, index) => {
       button.addEventListener("click", () => {
@@ -42,16 +53,27 @@
             "banner-image"
           )[0].style.backgroundImage = "url('src/cafe-banner.png')";
           dynamicHeading.textContent = "For Your Café";
+          dynamicSubheading.textContent = "Queues Building Up?";
+          dynamicDescription.textContent =
+            "Hand-washing customers’ reusable cups is now a thing of the past. Place instarinse where it suits your store best. Whether it’s staff operated or customer operated, save you and your customers those precious rush hour seconds.";
         } else if (index == 1) {
           document.getElementsByClassName(
             "banner-image"
           )[0].style.backgroundImage = "url('src/office-banner.png')";
           dynamicHeading.textContent = "For Your Office";
+          dynamicSubheading.textContent =
+            "Want to Become Part of the Reusable Revolution?";
+          dynamicDescription.textContent =
+            "Cut out the disposables, and cut your costs while you’re at it. Become part of the reusable revolution.";
         } else {
           document.getElementsByClassName(
             "banner-image"
           )[0].style.backgroundImage = "url('src/venue-banner.png')";
           dynamicHeading.textContent = "For Your Venue";
+          dynamicSubheading.textContent =
+            "Want to Become Part of the Reusable Revolution?";
+          dynamicDescription.textContent =
+            "Cut out the disposables, and cut your costs while you’re at it. Become part of the reusable revolution.";
         }
 
         buttonArray
