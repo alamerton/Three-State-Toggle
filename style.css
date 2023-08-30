@@ -129,13 +129,13 @@ p {
   }
   #cafe-button .button-heading {
     color: #434343;
-    margin-top: 17.5px;
+    margin-top: 15px;
   }
   #office-button .button-heading {
-    margin-top: 17.5px;
+    margin-top: 15px;
   }
   #venue-button .button-heading {
-    margin-top: 17.5px;
+    margin-top: 15px;
   }
   .banner-image {
     height: 40vh;
@@ -159,10 +159,17 @@ p {
   }
   .page-header {
     text-align: center;
-    padding: 10rem;
+    padding: 2rem;
+    font-size: 12px;
   }
   #dynamic-heading {
     text-shadow: 2px 2px #434343;
     color: #ffffff;
+  }
+  #dynamic-subheading {
+    font-size: 20px;
+  }
+  #dynamic-description {
+    font-size: 12px;
   }
 }
