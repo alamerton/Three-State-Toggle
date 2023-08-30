@@ -137,6 +137,9 @@ p {
   #venue-button .button-heading {
     margin-top: 15px;
   }
+  #dynamic-heading {
+    font-size: 25px;
+  }
   .banner-image {
     height: 40vh;
     padding-top: 25px;
