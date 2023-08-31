@@ -65,7 +65,7 @@ p {
   margin-top: 27.5px;
 }
 .banner-image {
-  height: 80vh;
+  height: 60rem;
   padding-top: 25px;
   background-image: url("src/cafe-banner.png");
   background-repeat: no-repeat;
@@ -82,53 +82,32 @@ p {
   font-family: "Apex New";
   font-weight: 550;
   font-size: 32px;
-  margin-top: 33%;
+  margin-top: 40rem;
 }
 .page-header {
   text-align: center;
-  padding: 10rem;
+  padding: 5rem;
 }
 #dynamic-heading {
   text-shadow: 2px 2px #434343;
   color: #ffffff;
+  font-size: 40px;
 }
 
-/* Mobile Dimensions */
+/* Tablet Dimensions */
 
-@media only screen and (max-width: 475px) {
+@media only screen and (max-width: 768px) {
   .three-state-toggle {
-    width: 80%;
-    display: flex;
-    justify-content: center;
     border-radius: 25px;
-    background: #ffffff;
-    padding: 5px;
-    margin: auto;
   }
   .button {
-    width: 33%;
     height: 30px;
-    flex-shrink: 0;
-    appearance: none;
-    border-radius: 50px;
-    margin: auto;
-  }
-  .button:hover {
-    cursor: pointer;
-  }
-  #cafe-button {
-    background: #f6f6f6;
   }
   .button-heading {
-    color: #afafaf;
-    text-align: center;
     font-size: 16px;
-    font-style: normal;
-    font-weight: 500;
     line-height: 0px;
   }
   #cafe-button .button-heading {
-    color: #434343;
     margin-top: 15px;
   }
   #office-button .button-heading {
@@ -138,27 +117,59 @@ p {
     margin-top: 15px;
   }
   #dynamic-heading {
+    font-size: 30px;
+  }
+  .banner-image {
+    height: 30rem;
+  }
+  #cta-button {
+    width: 10rem;
+    height: 2.5rem;
+    background: #7bd3f7;
+    font-size: 16px;
+    margin-top: 18rem;
+  }
+  .page-header {
+    text-align: center;
+    padding: 2rem;
+  }
+  #dynamic-heading {
+    text-shadow: 2px 2px #434343;
+    color: #ffffff;
+  }
+  #dynamic-subheading {
+    font-size: 30px;
+  }
+  #dynamic-description {
+    font-size: 16px;
+  }
+}
+
+/* Mobile Dimensions */
+
+@media only screen and (max-width: 425px) {
+  .three-state-toggle {
+    border-radius: 25px;
+  }
+  .button {
+    height: 30px;
+  }
+  .button-heading {
+    font-size: 16px;
+    line-height: 0px;
+  }
+  #dynamic-heading {
     font-size: 25px;
   }
   .banner-image {
-    height: 40vh;
-    padding-top: 25px;
-    background-image: url("src/cafe-banner.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    text-align: center;
+    height: 20rem;
   }
   #cta-button {
     width: 7.5rem;
     height: 2rem;
-    border-radius: 50px;
     background: #7bd3f7;
-    color: #fff;
-    font-family: "Apex New";
-    font-weight: 550;
     font-size: 12px;
-    margin-top: 67%;
+    margin-top: 10rem;
   }
   .page-header {
     text-align: center;
