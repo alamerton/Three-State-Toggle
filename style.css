@@ -85,19 +85,13 @@ p {
   margin-top: 40rem;
 }
 .page-header {
+  text-align: center;
   padding: 5rem;
 }
 #dynamic-heading {
   text-shadow: 2px 2px #434343;
   color: #ffffff;
   font-size: 40px;
-  text-align: center;
-}
-#dynamic-subheading {
-  text-align: center;
-}
-#dynamic-description {
-  text-align: center;
 }
 
 /* Tablet Dimensions */
@@ -133,23 +127,21 @@ p {
     height: 2.5rem;
     background: #7bd3f7;
     font-size: 16px;
-    margin-top: 18rem;
+    margin-top: 15rem;
   }
   .page-header {
+    text-align: center;
     padding: 2rem;
   }
   #dynamic-heading {
     text-shadow: 2px 2px #434343;
     color: #ffffff;
-    text-align: center;
   }
   #dynamic-subheading {
     font-size: 30px;
-    text-align: center;
   }
   #dynamic-description {
     font-size: 16px;
-    text-align: center;
   }
 }
 
@@ -177,23 +169,21 @@ p {
     height: 2rem;
     background: #7bd3f7;
     font-size: 12px;
-    margin-top: 10 rem;
+    margin-top: 10rem;
   }
   .page-header {
+    text-align: center;
     padding: 2rem;
     font-size: 12px;
   }
   #dynamic-heading {
     text-shadow: 2px 2px #434343;
     color: #ffffff;
-    text-align: center;
   }
   #dynamic-subheading {
     font-size: 20px;
-    text-align: center;
   }
   #dynamic-description {
     font-size: 12px;
-    text-align: center;
   }
 }
