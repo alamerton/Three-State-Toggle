@@ -1,5 +1,5 @@
 /* 
-Remove the code below here when adding custom css to the squarespace site
+These first few lines of code should not be exported to squarespace.
 These are styles that squarespace already applies to the HTML. They're
 used here to give this code the same appearance.
 */
@@ -22,7 +22,7 @@ p {
   font-family: "Apex New Book";
 }
 
-/* keep everything below here */
+/* Everything below here should go into the squarespace CSS */
 .three-state-toggle {
   width: 80%;
   display: flex;
