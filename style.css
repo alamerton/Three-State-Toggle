@@ -53,16 +53,18 @@ p {
   font-style: normal;
   font-weight: 500;
   line-height: 22px;
+  height: 60%;
+  margin: auto;
 }
 #cafe-button .button-heading {
   color: #434343;
-  margin-top: 27.5px;
+  padding-top: 27.5px;
 }
 #office-button .button-heading {
-  margin-top: 27.5px;
+  padding-top: 27.5px;
 }
 #venue-button .button-heading {
-  margin-top: 27.5px;
+  padding-top: 27.5px;
 }
 .banner-image {
   height: 60rem;
@@ -108,13 +110,13 @@ p {
     line-height: 0px;
   }
   #cafe-button .button-heading {
-    margin-top: 15px;
+    padding-top: 15px;
   }
   #office-button .button-heading {
-    margin-top: 15px;
+    padding-top: 15px;
   }
   #venue-button .button-heading {
-    margin-top: 15px;
+    padding-top: 15px;
   }
   #dynamic-heading {
     font-size: 30px;
