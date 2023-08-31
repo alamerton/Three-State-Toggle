@@ -85,7 +85,7 @@ p {
   font-family: "Apex New";
   font-weight: 550;
   font-size: 32px;
-  margin-top: 40rem;
+  margin-top: 35rem;
 }
 .page-header {
   text-align: center;
@@ -94,7 +94,6 @@ p {
 #dynamic-heading {
   text-shadow: 2px 2px #434343;
   color: #ffffff;
-  font-size: 40px;
 }
 
 /* Tablet Dimensions */
