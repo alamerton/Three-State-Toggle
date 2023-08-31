@@ -78,6 +78,7 @@ p {
 #cta-button {
   width: 20rem;
   height: 5rem;
+  border: none;
   border-radius: 50px;
   background: #7bd3f7;
   color: #fff;
