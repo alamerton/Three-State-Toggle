@@ -9,30 +9,42 @@
     <title>Three-State Toggle</title>
   </head>
   <body>
-    <div class="banner-image">
-      <div class="three-state-toggle">
-        <div class="button" type="radio" name="toggle" id="cafe-button">
-          <h2 class="button-heading">Cafés</h2>
+    <section
+      class="three-state-toggle-section"
+      id="three-state-toggle-section-top"
+    >
+      <div class="banner-image">
+        <div class="three-state-toggle">
+          <div class="button" type="radio" name="toggle" id="cafe-button">
+            <h2 class="button-heading">Cafés</h2>
+          </div>
+          <div class="button" type="radio" name="toggle" id="office-button">
+            <h2 class="button-heading">Offices</h2>
+          </div>
+          <div class="button" type="radio" name="toggle" id="venue-button">
+            <h2 class="button-heading">Venues</h2>
+          </div>
         </div>
-        <div class="button" type="radio" name="toggle" id="office-button">
-          <h2 class="button-heading">Offices</h2>
-        </div>
-        <div class="button" type="radio" name="toggle" id="venue-button">
-          <h2 class="button-heading">Venues</h2>
-        </div>
+        <h1 id="dynamic-heading">For Your Café</h1>
+        <button type="button" id="cta-button" href="/contact">
+          Get Updates
+        </button>
       </div>
-      <h1 id="dynamic-heading">For Your Café</h1>
-      <button type="button" id="cta-button" href="/contact">Get Updates</button>
-    </div>
-    <div class="page-header">
-      <h1 id="dynamic-subheading">Queues Building Up?</h1>
-      <h3 id="dynamic-description">
-        Hand-washing customers’ reusable cups is now a thing of the past. Place
-        instarinse where it suits your store best. Whether it’s staff operated
-        or customer operated, save you and your customers those precious rush
-        hour seconds.
-      </h3>
-    </div>
+    </section>
+    <section
+      class="three-state-toggle-section"
+      id="three-state-toggle-section-bottom"
+    >
+      <div class="page-header">
+        <h1 id="dynamic-subheading">Queues Building Up?</h1>
+        <h3 id="dynamic-description">
+          Hand-washing customers’ reusable cups is now a thing of the past.
+          Place instarinse where it suits your store best. Whether it’s staff
+          operated or customer operated, save you and your customers those
+          precious rush hour seconds.
+        </h3>
+      </div>
+    </section>
   </body>
 
   <script>
