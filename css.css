@@ -1,28 +1,16 @@
-/* 
-These first few lines of code should not be exported to squarespace.
-These are styles that squarespace already applies to the HTML. They're
-used here to give this code the same appearance.
-*/
-body,
-html {
-  height: 100%;
-  margin: 0;
-  font-family: Apex;
+/* ------------------------- */
+/* Three State Toggle Styles */
+/* ------------------------- */
+
+.banner-image {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 80vh;
+  text-align: center;
+  padding: 4rem;
 }
 
-@font-face {
-  font-family: "Apex New Book";
-  src: url("https://static1.squarespace.com/static/61a9ff8f8fb5cc04d2bddf56/t/61c5a502c1b82238bd9d1e34/1640342786993/ApexNew-Book.otf");
-}
-
-h1,
-h2,
-h3,
-p {
-  font-family: "Apex New Book";
-}
-
-/* Everything below here should go into the squarespace CSS */
 .three-state-toggle {
   width: 80%;
   display: flex;
@@ -32,6 +20,7 @@ p {
   padding: 5px;
   margin: auto;
 }
+
 .button {
   width: 33%;
   height: 75px;
@@ -40,12 +29,15 @@ p {
   border-radius: 50px;
   margin: auto;
 }
+
 .button:hover {
   cursor: pointer;
 }
+
 #cafe-button {
   background: #f6f6f6;
 }
+
 .button-heading {
   color: #afafaf;
   text-align: center;
@@ -53,28 +45,23 @@ p {
   font-style: normal;
   font-weight: 500;
   line-height: 22px;
-  height: 60%;
+  height: 100%;
   margin: auto;
 }
+
 #cafe-button .button-heading {
   color: #434343;
   padding-top: 27.5px;
 }
+
 #office-button .button-heading {
   padding-top: 27.5px;
 }
+
 #venue-button .button-heading {
   padding-top: 27.5px;
 }
-.banner-image {
-  height: 60rem;
-  padding-top: 25px;
-  background-image: url("src/cafe-banner.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  text-align: center;
-}
+
 #cta-button {
   width: 20rem;
   height: 5rem;
@@ -85,12 +72,15 @@ p {
   font-family: "Apex New";
   font-weight: 550;
   font-size: 32px;
-  margin-top: 35rem;
+  margin-top: 25rem;
+  margin-bottom: 20%;
 }
+
 .page-header {
   text-align: center;
-  padding: 5rem;
+  padding: 5rem 0 0 0;
 }
+
 #dynamic-heading {
   text-shadow: 2px 2px #434343;
   color: #ffffff;
@@ -98,32 +88,37 @@ p {
 
 /* Tablet Dimensions */
 
-@media only screen and (max-width: 768px) {
+@media screen and (max-width: 768px) {
   .three-state-toggle {
     border-radius: 25px;
+    width: 100%;
   }
+
   .button {
     height: 30px;
   }
+
   .button-heading {
     font-size: 16px;
-    line-height: 0px;
+    line-height: 2px;
   }
+
   #cafe-button .button-heading {
     padding-top: 15px;
   }
+
   #office-button .button-heading {
     padding-top: 15px;
   }
+
   #venue-button .button-heading {
     padding-top: 15px;
   }
-  #dynamic-heading {
-    font-size: 30px;
-  }
+
   .banner-image {
     height: 30rem;
   }
+
   #cta-button {
     width: 10rem;
     height: 2.5rem;
@@ -131,41 +126,36 @@ p {
     font-size: 16px;
     margin-top: 15rem;
   }
+
   .page-header {
     text-align: center;
     padding: 2rem;
-  }
-  #dynamic-heading {
-    text-shadow: 2px 2px #434343;
-    color: #ffffff;
-  }
-  #dynamic-subheading {
-    font-size: 30px;
-  }
-  #dynamic-description {
-    font-size: 16px;
   }
 }
 
 /* Mobile Dimensions */
 
-@media only screen and (max-width: 425px) {
+@media screen and (max-width: 425px) {
   .three-state-toggle {
     border-radius: 25px;
   }
+
   .button {
     height: 30px;
   }
+
   .button-heading {
     font-size: 16px;
-    line-height: 0px;
   }
+
   #dynamic-heading {
-    font-size: 25px;
+    font-size: 30px;
   }
+
   .banner-image {
-    height: 20rem;
+    height: 90vh !important;
   }
+
   #cta-button {
     width: 7.5rem;
     height: 2rem;
@@ -173,19 +163,23 @@ p {
     font-size: 12px;
     margin-top: 10rem;
   }
+
   .page-header {
     text-align: center;
-    padding: 2rem;
+    padding: 4rem;
     font-size: 12px;
   }
+
   #dynamic-heading {
     text-shadow: 2px 2px #434343;
     color: #ffffff;
   }
+
   #dynamic-subheading {
-    font-size: 20px;
+    font-size: 24px;
   }
+
   #dynamic-description {
-    font-size: 12px;
+    font-size: 18px;
   }
 }
