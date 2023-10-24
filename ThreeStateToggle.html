@@ -36,7 +36,6 @@
   const mobileDeviceWidth = 450; // TODO: find suitable value for breakpoint
   document.getElementsByClassName("banner-image")[0].style.backgroundImage =
     "url('https://images.squarespace-cdn.com/content/64db45b2c5e5061aaa7b478e/7157cfd6-d49e-428f-b5ed-d660931be20c/cafe-banner.png?content-type=image%2Fpng')";
-
   buttonArray.forEach((button, index) => {
     button.addEventListener("click", () => {
       button.style.background = "#F6F6F6";
@@ -53,16 +52,11 @@
             "baner-image"
           )[0].syle.backgroundImage = "TODO enter mobile cafe image url here"
         }
-        // dynamicHeading.textContent = "For Your Café";
-        // dynamicSubheading.textContent = "Queues Building Up?";
-        // dynamicDescription.textContent =
-        //   "Hand-washing customers’ reusable cups is now a thing of the past. Place instarinse where it suits your store best. Whether it’s staff operated or customer operated, save you and your customers those precious rush hour seconds.";
       } else if (index == 1) {
         if (window.innerWidth >= mobileDeviceWidth) {
           document.getElementsByClassName(
             "banner-image"
           )[0].style.backgroundImage =
-            // "url('https://ibb.co/nLgMm4w')";
             "url('https://www.dropbox.com/scl/fi/9xr0yx4i2u0yuwxp2y8r7/Office-with-text-2023-10-22-10_30_55.png?rlkey=p6bg7ih45jf150z9ybrgai3eq&raw=1')"
         } else {
           // There could be a check for tablet as well, with a different image, if we want (else if tablet width...)
@@ -70,11 +64,6 @@
             "banner-image"
           )[0].syle.backgroundImage = "TODO enter mobile office image url here"
         }
-        // dynamicHeading.textContent = "For Your Office";
-        // dynamicSubheading.textContent =
-        //   "Want to Become Part of the Reusable Revolution?";
-        // dynamicDescription.textContent =
-        //   "Cut out the disposables, and cut your costs while you’re at it. Become part of the reusable revolution.";
       } else {
         if (window.innerWidth >= mobileDeviceWidth) {
           document.getElementsByClassName(
@@ -86,11 +75,6 @@
             "banner-image"
           )[0].style.backgroundImage = "TODO: enter mobile venue image url here"
         }
-        // dynamicHeading.textContent = "For Your Venue";
-        // dynamicSubheading.textContent =
-        //   "Want to Become Part of the Reusable Revolution?";
-        // dynamicDescription.textContent =
-        //   "Cut out the disposables, and cut your costs while you’re at it. Become part of the reusable revolution.";
       }
 
       buttonArray
