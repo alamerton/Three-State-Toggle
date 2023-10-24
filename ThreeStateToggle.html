@@ -13,7 +13,7 @@
       <h2 class="button-heading">Venues</h2>
     </div>
   </div>
-  <h1 id="dynamic-heading">For Your Café</h1>
+  <!-- <h1 id="dynamic-heading">For Your Café</h1> -->
 </div>
 <!-- <div class="page-header">
   <h1 id="dynamic-subheading">Queues Building Up?</h1>
@@ -33,6 +33,7 @@
   const dynamicHeading = document.getElementById("dynamic-heading");
   const dynamicSubheading = document.getElementById("dynamic-subheading");
   const dynamicDescription = document.getElementById("dynamic-description");
+  const mobileDeviceWidth = 450; // TODO: find suitable value for breakpoint
   document.getElementsByClassName("banner-image")[0].style.backgroundImage =
     "url('https://images.squarespace-cdn.com/content/64db45b2c5e5061aaa7b478e/7157cfd6-d49e-428f-b5ed-d660931be20c/cafe-banner.png?content-type=image%2Fpng')";
 
@@ -41,29 +42,50 @@
       button.style.background = "#F6F6F6";
 
       if (index == 0) {
-        document.getElementsByClassName(
-          "banner-image"
-        )[0].style.backgroundImage =
-          "url('https://images.squarespace-cdn.com/content/64db45b2c5e5061aaa7b478e/7157cfd6-d49e-428f-b5ed-d660931be20c/cafe-banner.png?content-type=image%2Fpng')";
+        if (window.innerWidth >= mobileDeviceWidth) {
+          document.getElementsByClassName(
+            "banner-image"
+          )[0].style.backgroundImage =
+            "url('https://images.squarespace-cdn.com/content/64db45b2c5e5061aaa7b478e/7157cfd6-d49e-428f-b5ed-d660931be20c/cafe-banner.png?content-type=image%2Fpng')";
+        } else {
+          // There could be a check for tablet as well, with a different image, if we want (else if tablet width...)
+          document.getElementsByClassName(
+            "baner-image"
+          )[0].syle.backgroundImage = "TODO enter mobile cafe image url here"
+        }
         // dynamicHeading.textContent = "For Your Café";
         // dynamicSubheading.textContent = "Queues Building Up?";
         // dynamicDescription.textContent =
         //   "Hand-washing customers’ reusable cups is now a thing of the past. Place instarinse where it suits your store best. Whether it’s staff operated or customer operated, save you and your customers those precious rush hour seconds.";
       } else if (index == 1) {
-        document.getElementsByClassName(
-          "banner-image"
-        )[0].style.backgroundImage =
-          "url('https://images.squarespace-cdn.com/content/64edc7446cbc661db861942b/ba0d7e7f-6304-4eed-8ce7-2045ec7956dd/Office.jpeg?content-type=image%2Fjpeg')";
+        if (window.innerWidth >= mobileDeviceWidth) {
+          document.getElementsByClassName(
+            "banner-image"
+          )[0].style.backgroundImage =
+            // "url('https://ibb.co/nLgMm4w')";
+            "url('https://www.dropbox.com/scl/fi/9xr0yx4i2u0yuwxp2y8r7/Office-with-text-2023-10-22-10_30_55.png?rlkey=p6bg7ih45jf150z9ybrgai3eq&raw=1')"
+        } else {
+          // There could be a check for tablet as well, with a different image, if we want (else if tablet width...)
+          document.getElementsByClassName(
+            "banner-image"
+          )[0].syle.backgroundImage = "TODO enter mobile office image url here"
+        }
         // dynamicHeading.textContent = "For Your Office";
         // dynamicSubheading.textContent =
         //   "Want to Become Part of the Reusable Revolution?";
         // dynamicDescription.textContent =
         //   "Cut out the disposables, and cut your costs while you’re at it. Become part of the reusable revolution.";
       } else {
-        document.getElementsByClassName(
-          "banner-image"
-        )[0].style.backgroundImage =
-          "url('https://images.squarespace-cdn.com/content/64edc7446cbc661db861942b/82cb93a6-31d0-4fbc-9bb7-eefc15149b7e/Venue.jpeg?content-type=image%2Fjpeg')";
+        if (window.innerWidth >= mobileDeviceWidth) {
+          document.getElementsByClassName(
+            "banner-image"
+          )[0].style.backgroundImage =
+            "url('https://www.dropbox.com/scl/fi/8zudn0ck6gc0t7ta4rxaf/Venue-with-text-2023-10-22-10_30_40.png?rlkey=bnlti7akfrqraebfzl9degj1m&raw=1')";
+        } else {
+          document.getElementsByClassName(
+            "banner-image"
+          )[0].style.backgroundImage = "TODO: enter mobile venue image url here"
+        }
         // dynamicHeading.textContent = "For Your Venue";
         // dynamicSubheading.textContent =
         //   "Want to Become Part of the Reusable Revolution?";
