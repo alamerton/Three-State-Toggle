@@ -33,7 +33,7 @@
   const dynamicHeading = document.getElementById("dynamic-heading");
   const dynamicSubheading = document.getElementById("dynamic-subheading");
   const dynamicDescription = document.getElementById("dynamic-description");
-  const mobileDeviceWidth = 480;
+  var mobileDeviceWidth = 480;
   document.getElementsByClassName("banner-image")[0].style.backgroundImage =
     "url('https://images.squarespace-cdn.com/content/64db45b2c5e5061aaa7b478e/7157cfd6-d49e-428f-b5ed-d660931be20c/cafe-banner.png?content-type=image%2Fpng')";
   buttonArray.forEach((button, index) => {
@@ -51,7 +51,7 @@
           document.getElementsByClassName(
             "banner-image"
             // TODO: enter mobile venue image url here
-          )[0].style.backgroundImage = "https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?auto=format&fit=crop&q=80&w=1000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8bW9iaWxlJTIwcGhvbmV8ZW58MHx8MHx8fDA%3D"
+          )[0].style.backgroundImage = "url('https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?auto=format&fit=crop&q=80&w=1000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8bW9iaWxlJTIwcGhvbmV8ZW58MHx8MHx8fDA%3D')"
         }
       } else if (index == 1) {
         if (window.innerWidth > mobileDeviceWidth) {
@@ -64,7 +64,7 @@
           document.getElementsByClassName(
             "banner-image"
             // TODO: enter mobile venue image url here
-          )[0].style.backgroundImage = "https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?auto=format&fit=crop&q=80&w=1000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8bW9iaWxlJTIwcGhvbmV8ZW58MHx8MHx8fDA%3D"
+          )[0].style.backgroundImage = "url('https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?auto=format&fit=crop&q=80&w=1000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8bW9iaWxlJTIwcGhvbmV8ZW58MHx8MHx8fDA%3D')"
         }
       } else {
         if (window.innerWidth > mobileDeviceWidth) {
@@ -76,7 +76,7 @@
           document.getElementsByClassName(
             "banner-image"
             // TODO: enter mobile venue image url here
-          )[0].style.backgroundImage = "https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?auto=format&fit=crop&q=80&w=1000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8bW9iaWxlJTIwcGhvbmV8ZW58MHx8MHx8fDA%3D"
+          )[0].style.backgroundImage = "url('https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?auto=format&fit=crop&q=80&w=1000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8bW9iaWxlJTIwcGhvbmV8ZW58MHx8MHx8fDA%3D')"
         }
       }
 
